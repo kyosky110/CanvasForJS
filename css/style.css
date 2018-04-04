@@ -1,0 +1,101 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+body{
+    overflow: hidden;
+}
+
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+
+/* #canvas{
+    background: green;
+
+} */
+
+.actions {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.actions svg {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0px 5px;
+    transition: all 0.3s;
+}
+
+.actions svg.active{
+    fill: red;
+    transform: scale(1.2);
+}
+
+.colors{
+    position: fixed;
+    top: 60px;
+    left: 15px;
+}
+
+.colors > li{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin: 10px 10px;
+    transition: all 0.3s;
+}
+
+.colors > li.active{
+    transform: scale(1.2);
+}
+
+.colors > li.black{
+    background:black;
+}
+.colors > li.red{
+    background:red;
+}
+.colors > li.green{
+    background:green;
+}
+.colors > li.yellow{
+    background:yellow;
+}
+
+.sizes {
+    position: fixed;
+    top:20px;
+    right: 20px;
+}
+
+.sizes > li {
+    margin: 20px 0px;
+    height: 0;
+    width: 30px;
+    transition: all 0.3s;
+}
+
+.sizes >.thin{
+    border-top: 3px solid black;
+}
+
+.sizes >.thick{
+    border-top: 8px solid black;
+}
+
+.sizes > li.active{
+    transform: scale(1.2)
+}
+
